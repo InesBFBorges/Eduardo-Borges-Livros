@@ -5,6 +5,7 @@
 @import "./quotation.css";
 @import "./books.css";
 @import "./contact.css";
+@import "./copyright.css";
 
 :root{
     --neutral-dark: #222;
