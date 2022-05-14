@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "Dancing Script";
+    src: url(../fonts/DancingScript.ttf) format('truetype');
+    font-weight: 400 700;
+}
+
+@font-face {
+    font-family: "Caveat";
+    src: url(../fonts/Caveat.ttf) format('truetype');
+    font-weight: 400 700;
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url(../fonts/PlayfairDisplay.ttf) format('truetype');
+    font-weight: 400 900;
+}

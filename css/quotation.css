@@ -1,0 +1,50 @@
+.quotation{
+    padding: 3rem 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.quote{
+    quotes: none;
+    position: relative;
+    font-family: var(--ff3);
+    font-size: var(--fs-text);
+}
+
+.quote::before{
+    display: block;
+    padding-left: 10px;
+    content: "\201C";
+    font-size: 80px;
+    position: absolute;
+    left: -80px;
+    top: -40px;
+    color: var(--sepia-95);
+}
+
+.quote::after{
+    display: block;
+    padding-left: 10px;
+    content: "\201D";
+    font-size: 80px;
+    position: absolute;
+    right: 0;
+    top: calc(100% - 30px);
+    color: var(--sepia-95);
+}
+
+.author{
+    color: var(--sepia-15);
+    font-size: 1rem;
+    font-style: italic;
+    font-family: var(--ff1);
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 730px) {
+    .quotation{
+        padding: 3rem 60px;
+    }
+}

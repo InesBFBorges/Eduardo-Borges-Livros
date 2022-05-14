@@ -1,0 +1,103 @@
+@import "./helpers.css";
+
+header{
+    width: 100%;
+}
+
+.nav{
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(to right, var(--sepia-15), var(--sepia-75), var(--sepia-15));
+    box-shadow: 0.5rem 0 8px 2px var(--neutral-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.nav-list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.arrow-down{
+    filter: drop-shadow(0.4rem 0.2rem 2px var(--neutral-dark));
+}
+
+.nav-list-item{
+    font-size: 1.5rem;
+    color: var(--sepia-35);
+    cursor: pointer;
+    text-shadow: 0px 0px 2px var(--neutral-dark);
+}
+
+.nav-list-item a{
+    text-decoration: none;
+    color: var(--sepia-35);
+    text-shadow: 0px 0px 2px var(--neutral-dark);
+}
+
+.nav-dropdown-parent{
+    position: relative;
+}
+
+.nav-dropdown{
+    display: none;
+    padding: 1rem 1.5rem;
+    position: absolute;
+    top: 100%;
+    background-color: transparent;
+    z-index: 100;
+}
+
+.nav-dropdown li{
+    padding: 10px 5px;
+    background-image: linear-gradient(to right, var(--sepia-75), var(--sepia-95));
+    color: var(--sepia-15);
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    list-style-type: trad-chinese-formal;
+    border-radius: var(--border-radius);
+}
+
+.nav-dropdown li:hover{
+    animation: move_bcg_li 1s linear infinite;
+}
+
+.menu-dropdown-btn{
+    display: none;
+    background-color: transparent;
+    border: none;
+}
+
+@media screen and (max-width: 530px) {
+    .menu-dropdown-btn{
+        display: block;
+    }
+    .nav-list{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        height: 300%;
+        background-color: var(--sepia-95);
+        padding: 2rem;
+        z-index: 50;
+    }
+
+    .nav-list-item{
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (min-width: 530px) {
+    .nav-list{
+        display: flex;
+    }
+}

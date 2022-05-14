@@ -1,0 +1,75 @@
+#about{
+    width: 100%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    padding: var(--p-section);
+}
+
+.reading-svg{
+    width: 50%;
+}
+
+#GLASSES{
+    animation: enlarge_glasses 1s ease-in-out infinite alternate;
+}
+#laptop-logo{
+    animation: opacity_laptop_logo 1s linear infinite alternate;
+}
+#page{
+    /* animation: turn_page 1s linear infinite; */
+}
+#PAPER{
+    animation: lift_paper 1s linear infinite alternate;
+}
+#clock-pointer{
+    /* animation: move_clock 1s linear infinite; */
+}
+#PLANT{
+    animation: move_plant 1s linear infinite alternate;
+}
+#cup-smoke{
+    animation: animate_cup 1.2s linear infinite alternate;
+}
+
+.about-content{
+    max-width: 50%;
+}
+
+.about-title{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: var(--ff1);
+    font-size: var(--fs-title);
+    color: var(--sepia-35);
+}
+
+.about-paragraph,
+.about-paragraph-justify-right{
+    font-family: var(--ff2);
+    font-size: var(--fs-text);
+    color: var(--sepia-15);
+}
+
+.about-paragraph-justify-right {
+    text-align: right;
+}
+
+.animate-fw{
+    animation: increase_fw 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite alternate;
+}
+
+@media screen and (max-width: 1000px) {
+    .reading-svg{
+        display: none;
+    }
+
+    #about{
+        justify-content: center;
+    }
+
+    .about-content{
+        width: min(500px, 100%);
+        max-width: min(500px, 100%);
+    }
+}

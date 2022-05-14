@@ -1,0 +1,54 @@
+#contact {
+    display: grid;
+    place-items: center;
+    padding-bottom: 2rem;
+}
+
+#contact-form {
+    width: min(100%, 600px);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#contact-name,
+#contact-email,
+#contact-message {
+    padding: 0.8rem 1.5rem;
+    border: 1px dashed var(--sepia-15);
+    background-color: transparent;
+    color: var(--sepia-15);
+    font-size: 1.2rem;
+}
+
+#contact-name,
+#contact-email {
+    text-align: center;
+    border-radius: 500px;
+}
+
+#contact-message {
+    border-radius: var(--border-radius);
+}
+
+#contact-submit {
+    align-self: center;
+    margin-left: auto;
+    padding: var(--p-btn);
+    border: 1px solid var(--sepia-15);
+    color: var(--sepia-15);
+    border-radius: 500px;
+    background-color: transparent;
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+
+#contact-submit:hover {
+    background-color: var(--sepia-35);
+    color: var(--sepia-95);
+}
+
+#contact-submit:active {
+    box-shadow: inset 2px 2px 3px var(--sepia-95),
+    inset -2px -2px 3px var(--sepia-95);
+}

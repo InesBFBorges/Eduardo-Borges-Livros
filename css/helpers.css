@@ -1,0 +1,83 @@
+@keyframes move_bcg_li{
+    0%{
+        background-image: linear-gradient(to right, var(--sepia-75), var(--sepia-95));
+    }50%{
+        background-image: linear-gradient(0.25turn, var(--sepia-95), var(--sepia-75), var(--sepia-95));
+    }100%{
+        background-image: linear-gradient(to left, var(--sepia-75), var(--sepia-95));
+    }
+}
+
+@keyframes increase_fw {
+    from{
+        font-weight: 400;
+    }to{
+        font-weight: 700;
+    }
+}
+
+@keyframes move_hero_paragraph {
+    from{
+        opacity: 1;
+    }to{
+        opacity: 0.5;
+    }
+}
+
+@keyframes enlarge_glasses{
+    to{
+        transform: scale(1.5);
+    }
+}
+
+@keyframes opacity_laptop_logo{
+    to{
+        opacity: 0.3;
+    }
+}
+
+@keyframes turn_page{
+    to{
+        transform: rotate(-90deg);
+    }
+}
+
+@keyframes lift_paper{
+    to{
+        transform: translateY(30px);
+    }
+}
+
+@keyframes move_clock{
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes move_plant{
+    to{
+        transform: translateX(60px);
+    }
+}
+
+@keyframes animate_cup{
+    to{
+        transform: translateY(60px);
+    }
+}
+
+/* @keyframes move_svg_menu{
+    from{
+        width: 30%;
+        background-color: hsl(16, 68%, 15%);
+    }to{
+        width: 100%;
+        background-color: hsl(16, 68%, 75%);
+    }
+} */
+
+@keyframes increase_info{
+    to{
+        font-size: 1.8rem;
+    }
+}

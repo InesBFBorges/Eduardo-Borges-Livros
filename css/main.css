@@ -1,0 +1,74 @@
+@import "./fonts.css";
+@import "./nav.css";
+@import "./hero.css";
+@import "./about.css";
+@import "./quotation.css";
+@import "./books.css";
+@import "./contact.css";
+
+:root{
+    --neutral-dark: #222;
+    --sepia-15: hsl(16, 68%, 15%);
+    --sepia-35: hsl(16, 68%, 35%);
+    --sepia-55: hsl(16, 68%, 55%);
+    --sepia-75: hsl(16, 68%, 75%);
+    --sepia-95: hsl(16, 68%, 95%);
+    --info-clr: hsl(171, 40%, 50%);
+    --border-radius: 15px;
+    --ff1: "Dancing Script", Arial, sans-serif;
+    --ff2: "Caveat", Arial, sans-serif;
+    --ff3: "Playfair Display", Arial, sans-serif;
+    --fs-text: 1.5rem;
+    --fs-title: 1.8rem;
+    --fs-text-sinopse: 0.85rem;
+    --fs-sinopse-btn: 1rem;
+    --p-section: 3rem 0;
+    --vw-small: 530px;
+    --vw-medium: 1000px;
+    --p-btn: 0.5em 1.3em;
+    --box-shadow-btn: 0 3px 4px 1px rgba(0,0,0,0.4);
+}
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+body{
+    background-color: var(--sepia-75);
+    /* background-image: url("../img/book4.svg");
+    background-repeat: repeat; */
+    min-height: 100%;
+}
+
+/* body::after{
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/book4.svg");
+    background-repeat: repeat;
+    opacity: 0.5;
+} */
+
+main{
+    width: min(100%, 1200px);
+    margin: auto;
+    margin-top: 2rem;
+    padding-inline: 1em;
+}
+
