@@ -73,3 +73,13 @@ main{
     padding-inline: 1em;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: var(--sepia-15); /* or add it to the track */
+  }
+
+::-webkit-scrollbar-thumb {
+    background: var(--sepia-75);
+    border-radius: 500vmax;
+}
