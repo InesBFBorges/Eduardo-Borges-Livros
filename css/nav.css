@@ -61,7 +61,7 @@ header{
     color: var(--sepia-15);
     font-size: 1rem;
     margin-bottom: 0.5rem;
-    list-style-type: trad-chinese-formal;
+    list-style-type: upper-roman;
     border-radius: var(--border-radius);
 }
 
